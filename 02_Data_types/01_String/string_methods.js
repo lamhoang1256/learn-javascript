@@ -2,6 +2,14 @@
 // VD: "Hello world!", 'I am developer', `This is Javascript`
 const name = "Nguyen Hoang Lam";
 console.log(typeof name); // "string"
+// Chuyển đổi kiểu sang String
+console.log(String(12345)); // 12345
+console.log(String(4.99)); // 4.99
+console.log(String(null)); // "null"
+console.log(String(undefined)); // "undefined"
+console.log(String(NaN)); // "NaN"
+console.log(String(false)); // "false"
+console.log(String(true)); // "true"
 // Đếm số lượng chữ cái của 1 phần tử String
 //-> str.length
 console.log("Nguyen Hoang Lam".length); // 16

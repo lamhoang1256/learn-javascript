@@ -20,7 +20,7 @@ console.log(characterL); // "L"
 // -> str.split('character')
 console.log("Nguyen Hoang Lam".split(" ")); // ['Nguyen','Hoang','Lam']
 console.log("this-is-first-time".split("-")); // ['this','is','first','time']
-console.log("https://youtube.com".split("//")); // ['https:', 'youtube.com'node]
+console.log("https://youtube.com".split("//")); // ['https:', 'youtube.com']
 // Text transform
 //-> str.toLowerCase(): chuyển tất cả kí tự về chữ thường
 //-> str.toUpperCase(): chuyển tất cả kí tự về chữ in hoa

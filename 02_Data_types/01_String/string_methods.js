@@ -4,12 +4,12 @@ const name = "Nguyen Hoang Lam";
 console.log(typeof name); // "string"
 // Đếm số lượng chữ cái của 1 phần tử String
 //-> str.length
-console.log("Nguyen Hoang Lam".length);
-// Vị trí của từng chữ cái trong phần tử String bắt đầu từ 0, length = 16 -> index từ 0 -15
-// Truy cập 1 chữ cái bất kỳ trong 1 phần tử String
+console.log("Nguyen Hoang Lam".length); // 16
+// Truy cập 1 chữ cái bất kỳ trong 1 phần tử String, vị trí của từng chữ cái (index) trong phần tử String bắt đầu từ 0
 const characterL = "Nguyen Hoang Lam"[13];
 console.log(characterL); // "L"
-// Chuyển chuỗi thành mảng dựa theo kí tự truyền vào -> str.split('character')
+// Chuyển chuỗi thành mảng dựa theo kí tự truyền vào
+// -> str.split('character')
 console.log("Nguyen Hoang Lam".split(" ")); // ['Nguyen','Hoang','Lam']
 console.log("this-is-first-time".split("-")); // ['this','is','first','time']
 console.log("https://youtube.com".split("//")); // ['https:', 'youtube.com'node]
@@ -18,12 +18,12 @@ console.log("https://youtube.com".split("//")); // ['https:', 'youtube.com'node]
 //-> str.toUpperCase(): chuyển tất cả kí tự về chữ in hoa
 console.log("SHE IS BEAUTIFUL!".toLowerCase()); // she is beautiful!
 console.log("i am a student".toUpperCase()); // I AM A STUDENT
-// Kiểm tra từ khóa bắt đầu có trùng với String hay lưu ý so sánh cả kí tự in hoa với kí tự thường (tựa chức năng search gg)
+// Kiểm tra từ khóa bắt đầu có trùng với String hay không, lưu ý so sánh cả kí tự in hoa với kí tự thường (tựa chức năng search gg)
 // -> str.startsWith()
 console.log("How to learn JS".startsWith("how to")); // false
 console.log("How to learn JS".startsWith("How to")); // true
 console.log("How to learn JS".startsWith("JS")); // false
-// Kiểm tra từ khóa kết thúc có trùng với String hay lưu ý so sánh cả kí tự in hoa với kí tự thường
+// Kiểm tra từ khóa kết thúc có trùng với String hay không, lưu ý so sánh cả kí tự in hoa với kí tự thường
 // -> str.endsWith()
 console.log("Frontend Developer".endsWith("loper")); //true
 console.log("Frontend Developer".endsWith("developer")); // false
@@ -65,7 +65,7 @@ console.log("I like cat".charAt("0")); //I
 console.log("I like cat".charAt("5")); //e
 // Lấy ra 1 phần tử của chuỗi
 // -> str.substr(index, length)
-// -> str.(index, lastIndex)
+// -> str.substring(index, lastIndex)
 console.log("Do you love me?".substr(7, 8)); // love me?
 console.log("Do you love me?".substring(7, 15)); // love me?
 console.log("Do you love me?".substr(0, 15)); // Do you love me?
